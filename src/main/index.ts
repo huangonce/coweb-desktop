@@ -4,12 +4,10 @@ import { join } from 'path'
 import { electronApp, optimizer } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
 
-autoUpdater.logger = {
-  info: (message: string) => console.log(message),
-  warn: (message: string) => console.warn(message),
-  error: (message: string) => console.error(message),
-  debug: (message) => console.debug('Update:', message)
-}
+// 配置日志
+
+// 禁用自动下载更新
+autoUpdater.autoDownload = false
 
 function createWindow(): void {
   // Create the browser window.
