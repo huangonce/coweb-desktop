@@ -39,7 +39,11 @@ appImage:
   artifactName: ${name}-${version}.${ext}
 npmRebuild: false
 publish:
-  provider: generic
-  url: https://example.com/auto-updates
+  provider: github
+  owner: huangonce
+  repo: coweb-desktop
+  releaseType: release
+  channel: latest
+  updaterCacheDirName: coweb-desktop-updater
 electronDownload:
   mirror: https://npmmirror.com/mirrors/electron/

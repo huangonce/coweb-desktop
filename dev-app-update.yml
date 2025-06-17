@@ -1,4 +1,6 @@
-provider: generic
-url: https://your-update-server.com/updates
-updaterCacheDirName: coweb-desktop-updater
+provider: github
+owner: huangonce
+repo: coweb-desktop
+releaseType: release
 channel: latest
+updaterCacheDirName: coweb-desktop-updater
