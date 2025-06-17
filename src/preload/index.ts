@@ -38,9 +38,9 @@ const updateAPI = {
     listener: (event: Electron.IpcRendererEvent, info: unknown) => void | null
   ) => {
     if (listener) {
-      ipcRenderer.on('download-progress', listener)
+      ipcRenderer.on('update-downloaded', listener)
     } else {
-      ipcRenderer.removeAllListeners('download-progress')
+      ipcRenderer.removeAllListeners('update-downloaded')
     }
   },
   // 更新错误

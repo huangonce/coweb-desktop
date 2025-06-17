@@ -27,7 +27,6 @@ export function createWindow(): BrowserWindow {
         ...details.responseHeaders,
         'Content-Security-Policy': [
           "default-src 'self' https://cometa-console.test.leicloud.net; " +
-            "script-src 'self' 'unsafe-inline'; " + // 注意：unsafe-inline 有安全风险
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
             "img-src 'self' data: https://cometa-console.test.leicloud.net; " +
             "connect-src 'self' https://cometa-console.test.leicloud.net; " +
