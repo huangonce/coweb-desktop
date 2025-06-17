@@ -1,6 +1,6 @@
 {
   "name": "coweb-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Electron application with Vue and TypeScript",
   "main": "./out/main/index.js",
   "author": "example.com",
@@ -23,10 +23,13 @@
   "build": {
     "appId": "net.leicloud.test.cometa-console",
     "productName": "CoWeb Desktop",
-    "public": {
+    "copyright": "Copyright © 2025 CoWeb",
+    "publish": {
       "provider": "github",
       "owner": "huangonce",
-      "repo": "coweb-desktop"
+      "repo": "coweb-desktop",
+      "releaseType": "release",
+      "channel": "latest"
     },
     "win": {
       "target": "nsis"
