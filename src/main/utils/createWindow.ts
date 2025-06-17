@@ -1,4 +1,5 @@
 import { shell, BrowserWindow, session } from 'electron'
+import { is } from '@electron-toolkit/utils'
 import { join } from 'path'
 import icon from '../../../resources/icon.png?asset'
 
@@ -63,7 +64,12 @@ export function createWindow(): BrowserWindow {
   //   mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
   // }
 
-  const appURL = 'https://cometa-console.test.leicloud.net'
+  let appURL = ''
+  if (is.dev) {
+    appURL = 'http://192.168.1.25:5001'
+  } else {
+    appURL = 'https://cometa-console.test.leicloud.net'
+  }
   mainWindow.loadURL(appURL)
 
   // 确保返回窗口实例
