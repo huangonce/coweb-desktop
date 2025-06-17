@@ -64,7 +64,7 @@ export function createWindow(): BrowserWindow {
   //   mainWindow.loadFile(join(__dirname, '../renderer/index.html'))
   // }
 
-  const appURL = 'http://localhost:5001'
+  const appURL = 'https://cometa-console.test.leicloud.net'
   mainWindow.loadURL(appURL)
 
   // 确保返回窗口实例

@@ -90,12 +90,12 @@ export function setupDevAutoUpdate(): void {
     autoUpdater.updateConfigPath = path.join(__dirname, '../../dev-app-update.yml')
     autoUpdater.forceDevUpdateConfig = true
 
-    // 模拟更新检查
-    setTimeout(() => {
-      safeSend('update-available', {
-        version: '1.0.1',
-        releaseDate: new Date().toISOString()
-      })
-    }, 5000)
+    // // 模拟更新检查
+    // setTimeout(() => {
+    //   safeSend('update-available', {
+    //     version: '1.0.3',
+    //     releaseDate: new Date().toISOString()
+    //   })
+    // }, 5000)
   }
 }
